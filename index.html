@@ -1,164 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"defer></script>
-  <title>Pesquisa - Placas Solares</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Pesquisa - Placas Solares</title>
 </head>
+
 <body>
     <header>
         <h1>Placas Solares | Sistemas Fotovoltaicos</h1>
     </header>
     <nav>
-      <a href="#"><button onclick="navegar('introducao')">Introdução</button></a>
-      <a href="#"><button onclick="navegar('efeito')">Efeito</button></a>
-      <a href="#"><button onclick="navegar('intelbras')">Intelbras</button></a>
-      <a href="#"><button onclick="navegar('componentes')">Componentes</button></a>
-      <a href="#"><button onclick="navegar('compara-fabricantes')">Comparação Fabricantes</button></a>
-      <a href="#"><button onclick="navegar('radiacao-tijucas')">Radiação Tijucas</button></a>
-      <a href="#"><button onclick="navegar('compara-regiao')">Comparação Regiões</button></a>
-      <a href="#"><button onclick="navegar('conclusao')">Conclusão</button></a>
-      <a href="#"><button onclick="navegar('calculadora')">Calculadora</button></a>
+        <a href="#"><button onclick="navegar('introducao')">Introdução</button></a>
+        <a href="#"><button onclick="navegar('efeito')">Efeito</button></a>
+        <a href="#"><button onclick="navegar('intelbras')">Intelbras</button></a>
+        <a href="#"><button onclick="navegar('componentes')">Componentes</button></a>
+        <a href="#"><button onclick="navegar('compara-fabricantes')">Comparação Fabricantes</button></a>
+        <a href="#"><button onclick="navegar('radiacao-tijucas')">Radiação Tijucas</button></a>
+        <a href="#"><button onclick="navegar('compara-regiao')">Comparação Regiões</button></a>
+        <a href="#"><button onclick="navegar('conclusao')">Conclusão</button></a>
+        <a href="#"><button onclick="navegar('arduino')">Arduino</button></a>
+        <a href="#"><button onclick="navegar('calculadora')">Calculadora</button></a>
     </nav>
     <main>
         <section id="introducao" class="active">
-        <h2>1. Introdução</h2>
-        <br><p>A demanda por fontes de energia limpas e renováveis cresce a cada ano, impulsionada por questões ambientais, econômicas e sociais. A energia solar fotovoltaica surge
-            como uma das principais alternativas sustentáveis, destacando-se por sua disponibilidade
-            abundante, baixo impacto ambiental e viabilidade técnica.</p>
+            <h2>1. Introdução</h2>
+            <br>
+            <p>A demanda por fontes de energia limpas e renováveis cresce a cada ano, impulsionada por questões
+                ambientais, econômicas e sociais. A energia solar fotovoltaica surge
+                como uma das principais alternativas sustentáveis, destacando-se por sua disponibilidade
+                abundante, baixo impacto ambiental e viabilidade técnica.</p>
             <p>Este trabalho tem como objetivo apresentar os fundamentos da energia solar, com foco
-            nas placas solares, seus componentes principais, fabricantes relevantes e dados específicos
-            sobre a radiação solar em Tijucas-SC, além de uma análise comparativa com outras regiões
-            do Brasil</p>
+                nas placas solares, seus componentes principais, fabricantes relevantes e dados específicos
+                sobre a radiação solar em Tijucas-SC, além de uma análise comparativa com outras regiões
+                do Brasil</p>
         </section>
 
         <section id="efeito">
-        <h2>2. Explicação do Efeito Fotovoltaico</h2>
-        <br><p>O efeito fotovoltaico é o fenômeno físico que permite a conversão direta da luz solar em eletricidade. Ele ocorre quando fótons (partículas de luz) atingem um material
-            semicondutor, como o silício, excitando os elétrons e gerando corrente elétrica contínua
-            (DC).</p><br>
+            <h2>2. Explicação do Efeito Fotovoltaico</h2>
+            <br>
+            <p>O efeito fotovoltaico é o fenômeno físico que permite a conversão direta da luz solar em eletricidade.
+                Ele ocorre quando fótons (partículas de luz) atingem um material
+                semicondutor, como o silício, excitando os elétrons e gerando corrente elétrica contínua
+                (DC).</p><br>
             <div class="div-video">
                 <span style="font-size: 20px;"><strong>Video mais explicativo de como funciona</strong></span><br>
-                <iframe width="575" height="325" style="margin-top: 15px; border-radius: 10px; border: black solid;" src="https://www.youtube.com/embed/DGXCsrtE3Eo?si=SzOZQNqzjo6Tcce7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="575" height="325" style="margin-top: 15px; border-radius: 10px; border: black solid;"
+                    src="https://www.youtube.com/embed/DGXCsrtE3Eo?si=SzOZQNqzjo6Tcce7" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
         <section id="intelbras">
-        <h2>3. Placas Solares Intelbras</h2>
-        <br><p>A Intelbras é uma empresa brasileira fundada em 1976, reconhecida por sua atuação
-            em segurança, comunicação e energia. Recentemente, ampliou seu portfólio para o setor
-            de energia solar fotovoltaica, oferecendo painéis solares, inversores e soluções completas.
-            Com isso, reforça seu compromisso com a inovação e a sustentabilidade, contribuindo para
-            a expansão das fontes renováveis no Brasil.</p>
-        <ul>
-            <li><strong>EMS 160P:</strong> Um excelente custo beneficio, classificação energetica A na INMETRO,
-                com tamanho reduzido e um peso de 10,6kg, perfeito para qualquer tipo de projeto,
-                160W de potencia maxima, 8,89A de corrente maxima de operação, Policristalino
-                com 36 celular(156 * 156mm)
+            <h2>3. Placas Solares Intelbras</h2>
+            <br>
+            <p>A Intelbras é uma empresa brasileira fundada em 1976, reconhecida por sua atuação
+                em segurança, comunicação e energia. Recentemente, ampliou seu portfólio para o setor
+                de energia solar fotovoltaica, oferecendo painéis solares, inversores e soluções completas.
+                Com isso, reforça seu compromisso com a inovação e a sustentabilidade, contribuindo para
+                a expansão das fontes renováveis no Brasil.</p>
+            <ul>
+                <li><strong>EMS 160P:</strong> Um excelente custo beneficio, classificação energetica A na INMETRO,
+                    com tamanho reduzido e um peso de 10,6kg, perfeito para qualquer tipo de projeto,
+                    160W de potencia maxima, 8,89A de corrente maxima de operação, Policristalino
+                    com 36 celular(156 * 156mm)
                 </li>
-            <li><strong>EMST-340P HC:</strong> Certificação INMETRO, com facil instalação, tamanho medio e
-                com peso de 20,3kg, atendendo projetos de qualquer tamanho e um bom custo beneficio, potencia maxima de 340W, corrente maxima de operação de 9,05A, tecnologia
-                half cell policristalino com 144 celulas(157x78,5mm).</li>
-            <li><strong>EMSC-555M HC:</strong> Certificado INMETRO, excelente para projetos maiores, pesando 26,6kg, potencia maxima de 555W, Corrente maxima de operação de 13,13A,
-                celulas de Silício Monocristalino 144 Celulas(182*91mm)
+                <li><strong>EMST-340P HC:</strong> Certificação INMETRO, com facil instalação, tamanho medio e
+                    com peso de 20,3kg, atendendo projetos de qualquer tamanho e um bom custo beneficio, potencia maxima
+                    de 340W, corrente maxima de operação de 9,05A, tecnologia
+                    half cell policristalino com 144 celulas(157x78,5mm).</li>
+                <li><strong>EMSC-555M HC:</strong> Certificado INMETRO, excelente para projetos maiores, pesando 26,6kg,
+                    potencia maxima de 555W, Corrente maxima de operação de 13,13A,
+                    celulas de Silício Monocristalino 144 Celulas(182*91mm)
                 </li>
-        </ul>
-        <div class="imgg">
-            <img class="img-intelbras" src="./img/revenda-de-energia-solar.jpg" alt="">
-        </div>
+            </ul>
+            <div class="imgg">
+                <img class="img-intelbras" src="./img/revenda-de-energia-solar.jpg" alt="">
+            </div>
         </section>
 
         <section id="componentes">
-        <h2>4. Demais Componentes do Sistema</h2>
-        <h3>4.1 Estrutura de Fixação</h3>
-        <p>Responsável pela sustentação e inclinação dos módulos. Pode ser para telhado, solo
-            ou sistemas móveis. Deve resistir a ventos, chuva e oxidação.</p>
-        <h3>4.2 Inversores e Microinversores</h3>
-        <ul>
-            <li><strong>Inversor String:</strong> usado em sistemas residenciais e comerciais</li>
-            <li><strong>Microinversor:</strong> cada módulo possui seu próprio inversor, otimizando a produção</li>
-        </ul>
-        <p>Função: converter corrente contínua (DC) em alternada (AC), compatível com a rede
-        elétrica</p>
-        <h3>4.3 Cabos e Conectores</h3>
-        <p>Responsáveis pela interligação dos módulos com os inversores e demais dispositivos.
-            Devem ser resistentes à radiação UV e possuir isolamento duplo.</p>
-        <h3>4.4 String Box / Proteções</h3>
-        <p>Centraliza os circuitos e inclui: <ul>
-            <li><strong>Disjuntores</strong></li>
-            <li><strong>Fusíveis</strong></li>
-            <li><strong>DPS (Dispositivo de Proteção contra Surtos)</strong></li>
-        </ul></p>
-        <h3>4.5 Controladores de Carga e Baterias</h3>
-        <p>Utilizados em sistemas off-grid (sem conexão à rede). Regulam a carga nas baterias e
-            evitam sobrecarga.</p>
-        <h3>4.6 Medidores e Sistemas de Monitoramento</h3>
-        <p>Acompanham a geração e o consumo em tempo real via app ou plataforma web,
-            permitindo manutenções preventivas e análise de desempenho.</p>
+            <h2>4. Demais Componentes do Sistema</h2>
+            <h3>4.1 Estrutura de Fixação</h3>
+            <p>Responsável pela sustentação e inclinação dos módulos. Pode ser para telhado, solo
+                ou sistemas móveis. Deve resistir a ventos, chuva e oxidação.</p>
+            <h3>4.2 Inversores e Microinversores</h3>
+            <ul>
+                <li><strong>Inversor String:</strong> usado em sistemas residenciais e comerciais</li>
+                <li><strong>Microinversor:</strong> cada módulo possui seu próprio inversor, otimizando a produção</li>
+            </ul>
+            <p>Função: converter corrente contínua (DC) em alternada (AC), compatível com a rede
+                elétrica</p>
+            <h3>4.3 Cabos e Conectores</h3>
+            <p>Responsáveis pela interligação dos módulos com os inversores e demais dispositivos.
+                Devem ser resistentes à radiação UV e possuir isolamento duplo.</p>
+            <h3>4.4 String Box / Proteções</h3>
+            <p>Centraliza os circuitos e inclui:
+            <ul>
+                <li><strong>Disjuntores</strong></li>
+                <li><strong>Fusíveis</strong></li>
+                <li><strong>DPS (Dispositivo de Proteção contra Surtos)</strong></li>
+            </ul>
+            </p>
+            <h3>4.5 Controladores de Carga e Baterias</h3>
+            <p>Utilizados em sistemas off-grid (sem conexão à rede). Regulam a carga nas baterias e
+                evitam sobrecarga.</p>
+            <h3>4.6 Medidores e Sistemas de Monitoramento</h3>
+            <p>Acompanham a geração e o consumo em tempo real via app ou plataforma web,
+                permitindo manutenções preventivas e análise de desempenho.</p>
         </section>
 
         <section id="compara-fabricantes">
-        <h2>5. Comparação com Outros Fabricantes</h2>
-        <br><p>A Intelbras, fabricante nacional brasileira, oferece painéis solares voltados para o mercado residencial e comercial de pequeno porte. Seus módulos variam entre <strong>160 W e 555
-            W </strong>, com eficiências de até <strong>19,3%</strong>, utilizando tecnologias <strong>policristalinas e silicio monocristalino </strong>. A marca se destaca pelo excelente custo beneficio, sendo bom para qualquer
-            tamanho de projeto, suporte técnico nacional e integração facilitada com outros equipamentos da própria marca. Por outro lado, a Jinko Solar, uma das líderes globais do setor,
-            disponibiliza módulos com potências que chegam a 570 W, com eficiências superiores a
-            22,5%. Seus modelos utilizam tecnologias como <strong>TOPCon, células N-type e estrutura
-            bifacial </strong>, permitindo maior aproveitamento da luz solar. Basicamente, a Intelbras é ideal
-            para sistemas menores com bom <strong>custo-benefício e suporte local</strong>, usado na maioria das
-            vezes em projetos menores, enquanto a Jinko Solar é indicada para projetos de maior
-            porte, onde a prioridade é o <strong>máximo rendimento energético por área instalada.</strong></p>
+            <h2>5. Comparação com Outros Fabricantes</h2>
+            <br>
+            <p>A Intelbras, fabricante nacional brasileira, oferece painéis solares voltados para o mercado residencial
+                e comercial de pequeno porte. Seus módulos variam entre <strong>160 W e 555
+                    W </strong>, com eficiências de até <strong>19,3%</strong>, utilizando tecnologias
+                <strong>policristalinas e silicio monocristalino </strong>. A marca se destaca pelo excelente custo
+                beneficio, sendo bom para qualquer
+                tamanho de projeto, suporte técnico nacional e integração facilitada com outros equipamentos da própria
+                marca. Por outro lado, a Jinko Solar, uma das líderes globais do setor,
+                disponibiliza módulos com potências que chegam a 570 W, com eficiências superiores a
+                22,5%. Seus modelos utilizam tecnologias como <strong>TOPCon, células N-type e estrutura
+                    bifacial </strong>, permitindo maior aproveitamento da luz solar. Basicamente, a Intelbras é ideal
+                para sistemas menores com bom <strong>custo-benefício e suporte local</strong>, usado na maioria das
+                vezes em projetos menores, enquanto a Jinko Solar é indicada para projetos de maior
+                porte, onde a prioridade é o <strong>máximo rendimento energético por área instalada.</strong>
+            </p>
         </section>
 
         <section id="radiacao-tijucas">
-        <h2>6. Dados de Radiação Solar de Tijucas (SC)</h2>
-        <br><p>Localizada no litoral de Santa Catarina, apresenta um bom potencial para geração de
-            energia solar fotovoltaica. Segundo o Atlas Brasileiro de Energia Solar, elaborado pelo
-            INPE, a média anual de radiação solar global horizontal na região é de aproximadamente
-            <strong>5,0 kWh/m²·dia</strong>. Esse valor representa uma condição favorável para a instalação de sistemas fotovoltaicos, especialmente em telhados residenciais e comerciais. Nos meses de
-            verão, a radiação pode ultrapassar os <strong>5,5 kWh/m²·dia </strong>, enquanto no inverno os valores
-            tendem a cair para algo em torno de <strong>4,0 kWh/m²·dia </strong>, em função do aumento da nebulosidade. Apesar de Tijucas não estar entre as regiões com os maiores índices de radiação
-            solar do Brasil, o potencial ainda é consideravelmente "bom", permitindo a geração de
-            energia durante todo o ano, desde que o sistema seja bem dimensionado e posicionado
-            adequadamente.</p>
+            <h2>6. Dados de Radiação Solar de Tijucas (SC)</h2>
+            <br>
+            <p>Localizada no litoral de Santa Catarina, apresenta um bom potencial para geração de
+                energia solar fotovoltaica. Segundo o Atlas Brasileiro de Energia Solar, elaborado pelo
+                INPE, a média anual de radiação solar global horizontal na região é de aproximadamente
+                <strong>5,0 kWh/m²·dia</strong>. Esse valor representa uma condição favorável para a instalação de
+                sistemas fotovoltaicos, especialmente em telhados residenciais e comerciais. Nos meses de
+                verão, a radiação pode ultrapassar os <strong>5,5 kWh/m²·dia </strong>, enquanto no inverno os valores
+                tendem a cair para algo em torno de <strong>4,0 kWh/m²·dia </strong>, em função do aumento da
+                nebulosidade. Apesar de Tijucas não estar entre as regiões com os maiores índices de radiação
+                solar do Brasil, o potencial ainda é consideravelmente "bom", permitindo a geração de
+                energia durante todo o ano, desde que o sistema seja bem dimensionado e posicionado
+                adequadamente.
+            </p>
             <div class="imgg">
                 <img class="imagem-tj" src="./img/image.png" alt="">
             </div>
         </section>
 
         <section id="compara-regiao">
-        <h2>7. Comparação com Regiões do Brasil</h2>
-        <p>Tijucas apresenta uma radiação solar média anual em torno de 4,4 a 4,6 kWh/m²/dia. Já nas melhores regiões do Brasil, como o semiárido nordestino (Petrolina–PE, Juazeiro–BA, entre outras), os valores chegam a 5,8 a 6,2 kWh/m²/dia em média.</p>
-        <br><ul>
-            <li>Sertão Nordestino: até 6,5</li>
-            <li>Norte de Minas: até 6,2</li>
-            <li>Centro-Oeste: 5,8 a 6,3</li>
-            <li>Tijucas: 5,0</li>
-        </ul>
-        <div class="imgg">
-            <div class="regiao">
-                <img class="imagem3" src="/img/image2.png" alt="">
-                <span>Nordeste</span>
+            <h2>7. Comparação com Regiões do Brasil</h2>
+            <p>Tijucas apresenta uma radiação solar média anual em torno de 4,4 a 4,6 kWh/m²/dia. Já nas melhores
+                regiões do Brasil, como o semiárido nordestino (Petrolina–PE, Juazeiro–BA, entre outras), os valores
+                chegam a 5,8 a 6,2 kWh/m²/dia em média.</p>
+            <br>
+            <ul>
+                <li>Sertão Nordestino: até 6,5</li>
+                <li>Norte de Minas: até 6,2</li>
+                <li>Centro-Oeste: 5,8 a 6,3</li>
+                <li>Tijucas: 5,0</li>
+            </ul>
+            <div class="imgg">
+                <div class="regiao">
+                    <img class="imagem3" src="/img/image2.png" alt="">
+                    <span>Nordeste</span>
+                </div>
+                <div class="regiao">
+                    <img class="imagem3" src="/img/image3.png" alt="">
+                    <span>Centro-Oeste</span>
+                </div>
+                <div class="regiao">
+                    <img class="imagem3" src="/img/image.png" alt="">
+                    <span>Tijucas</span>
+                </div>
             </div>
-            <div class="regiao">
-                <img class="imagem3" src="/img/image3.png" alt="">
-                <span>Centro-Oeste</span>
-            </div>
-            <div class="regiao">
-                <img class="imagem3" src="/img/image.png" alt="">
-                <span>Tijucas</span>
-            </div>
-        </div>
         </section>
         <section id="conclusao">
-        <h2>8. Conclusão</h2>
-        <br><p>A energia solar se apresenta como uma solução sustentável, econômica e eficaz para
-            as necessidades energéticas atuais. Mesmo em regiões com irradiação moderada como
-            Tijucas, a instalação de sistemas fotovoltaicos é altamente viável, especialmente com o
-            avanço tecnológico dos equipamentos e a redução de custos. </p>
+            <h2>8. Conclusão</h2>
+            <br>
+            <p>A energia solar se apresenta como uma solução sustentável, econômica e eficaz para
+                as necessidades energéticas atuais. Mesmo em regiões com irradiação moderada como
+                Tijucas, a instalação de sistemas fotovoltaicos é altamente viável, especialmente com o
+                avanço tecnológico dos equipamentos e a redução de custos. </p>
             <p>A escolha dos componentes certos – desde os módulos até o inversor e estrutura –
                 influencia diretamente o desempenho e a durabilidade do sistema. A Intelbras, por ser
                 uma marca nacional com suporte técnico local, se destaca como excelente opção no Brasil,
@@ -166,24 +196,54 @@
             <p>A tendência é que o uso de energia solar cresça nos próximos anos, contribuindo para
                 a transição energética e redução dos impactos ambientais</p>
         </section>
+        <section id="arduino">
+            <h2>9. Arduino</h2>
+            <h3>9.1 Entradas e Saidas Digitais</h3>
+            <p>A entrada digital do Arduino lê apenas dois estados: 0 ou 1 (binário). Fisicamente isso significa sem
+                tensão (LOW) ou com tensão (HIGH). No Arduino Uno, o pino considera LOW quando a tensão está próxima de
+                0V, e HIGH quando está perto de 5V. Ele não mede valores intermediários, apenas reconhece se o sinal
+                está desligado ou ligado.</p> <br>
+            <p>A saída digital envia também apenas dois estados: 0 ou 1. Fisicamente, o pino ou entrega 0V (LOW) ou 5V
+                (HIGH). É usada para ligar/desligar LEDs, relés, módulos e outros dispositivos. Não há níveis
+                intermediários, é sempre ligado ou desligado.</p>
+            <h3>9.2 Entradas e Saidas Analogicas</h3>
+            <p>A entrada analógica lê um valor variável de tensão entre 0V e 5V. Internamente, o Arduino converte essa tensão para um número binário entre 0 e 1023, pois o conversor é de 10 bits. Assim, cada nível representa uma pequena parte dos 5V, permitindo medir sensores como potenciômetros, sensor de luz, etc.</p> <br>
+            <p>Apesar do nome, o Arduino não gera tensão analógica real. Ele usa PWM, que liga e desliga um pino muito rápido, criando uma média de tensão percebida pelo circuito. O valor de saída vai de 0 a 255 (8 bits). Fisicamente o pino alterna entre 0V e 5V, mas a média pode simular valores intermediários.</p>
+            <h3>9.3 O que é um arduino?</h3>
+            <p>Arduino é uma plataforma de prototipagem eletrônica muito usada por iniciantes e profissionais. Ele junta um microcontrolador, uma placa fácil de conectar componentes e uma IDE simples para programar. Serve para automação, robótica, sensores e projetos eletrônicos em geral.</p>
+            <h3>9.4 O que é um microcontrolador?</h3>
+            <p>Um microcontrolador é um chip que funciona como um pequeno computador. Ele possui processador, memória e portas de entrada/saída. É ele que executa o código e controla tudo o que o Arduino faz.</p>
+            <h3>9.5 Qual o microcontrolador do Arduino</h3>
+            <ul>
+                <li><strong>Modelo usado pelo Arduino:</strong> ATmega328P</li>
+                <li><strong>Fabricado por:</strong> Microchip Technology (Antiga Atmel)</li>
+            </ul> 
+            <h3>9.6 Qual a linguagem de programação do arduino</h3>
+            <p>O Arduino usa uma linguagem baseada em C/C++ simplificada, com funções próprias para facilitar o uso dos pinos.</p>
+            <h3>9.7 Onde é programado o arduino?</h3>
+            <p>O código é escrito na Arduino IDE, que pode ser instalada no computador ou usada na versão online (Arduino Web Editor).</p>
+        </section>
         <section id="calculadora">
-                <div class="div-calc">
-                    <h1>Calculadora de Placas Necessarias</h1>
-                    <label for="consumo">Consumo Mensal por KWh</label><br>
-                    <input type="number" id="consumo" placeholder="Consumo"><br><br>
-                    <label for="gerPP">Geração mensal da placa:</label><br>
-                    <input type="number" id="gerPP" placeholder="Geração por Placa"><br>
-                    <button id="btn-calculo" onclick="calculo()"><span style="padding: 10px; padding-top: 5px; padding-bottom: 5px;">Calcular</span></button>
-                </div>
-                <div id="resultado"></div>
+            <div class="div-calc">
+                <h1>Calculadora de Placas Necessarias</h1>
+                <label for="consumo">Consumo Mensal por KWh</label><br>
+                <input type="number" id="consumo" placeholder="Consumo"><br><br>
+                <label for="gerPP">Geração mensal da placa:</label><br>
+                <input type="number" id="gerPP" placeholder="Geração por Placa"><br>
+                <button id="btn-calculo" onclick="calculo()"><span
+                        style="padding: 10px; padding-top: 5px; padding-bottom: 5px;">Calcular</span></button>
+            </div>
+            <div id="resultado"></div>
         </section>
     </main>
 
     <footer>
         <div class="footer-info">
             <span>Feito por Enzo dos Santos Hipolito &copy; - Aprendizagem SENAI</span>
-            <a href="https://github.com/EnzoHipolito"><i class="fa-brands fa-square-github" style="font-size: 40px; color: black; transition: 100ms;"></i></a>
+            <a href="https://github.com/EnzoHipolito"><i class="fa-brands fa-square-github"
+                    style="font-size: 40px; color: black; transition: 100ms;"></i></a>
         </div>
     </footer>
 </body>
+
 </html>
