@@ -24,6 +24,8 @@
         <a href="#"><button onclick="navegar('compara-regiao')">Comparação Regiões</button></a>
         <a href="#"><button onclick="navegar('conclusao')">Conclusão</button></a>
         <a href="#"><button onclick="navegar('arduino')">Arduino</button></a>
+        <a href="#"><button onclick="navegar('fotosvideos')">Fotos/Videos</button></a>
+        <a href="#"><button onclick="navegar('solidworks')">SolidWorks</button></a>
         <a href="#"><button onclick="navegar('calculadora')">Calculadora</button></a>
     </nav>
     <main>
@@ -207,21 +209,236 @@
                 (HIGH). É usada para ligar/desligar LEDs, relés, módulos e outros dispositivos. Não há níveis
                 intermediários, é sempre ligado ou desligado.</p>
             <h3>9.2 Entradas e Saidas Analogicas</h3>
-            <p>A entrada analógica lê um valor variável de tensão entre 0V e 5V. Internamente, o Arduino converte essa tensão para um número binário entre 0 e 1023, pois o conversor é de 10 bits. Assim, cada nível representa uma pequena parte dos 5V, permitindo medir sensores como potenciômetros, sensor de luz, etc.</p> <br>
-            <p>Apesar do nome, o Arduino não gera tensão analógica real. Ele usa PWM, que liga e desliga um pino muito rápido, criando uma média de tensão percebida pelo circuito. O valor de saída vai de 0 a 255 (8 bits). Fisicamente o pino alterna entre 0V e 5V, mas a média pode simular valores intermediários.</p>
+            <p>A entrada analógica lê um valor variável de tensão entre 0V e 5V. Internamente, o Arduino converte essa
+                tensão para um número binário entre 0 e 1023, pois o conversor é de 10 bits. Assim, cada nível
+                representa uma pequena parte dos 5V, permitindo medir sensores como potenciômetros, sensor de luz, etc.
+            </p> <br>
+            <p>Apesar do nome, o Arduino não gera tensão analógica real. Ele usa PWM, que liga e desliga um pino muito
+                rápido, criando uma média de tensão percebida pelo circuito. O valor de saída vai de 0 a 255 (8 bits).
+                Fisicamente o pino alterna entre 0V e 5V, mas a média pode simular valores intermediários.</p>
             <h3>9.3 O que é um arduino?</h3>
-            <p>Arduino é uma plataforma de prototipagem eletrônica muito usada por iniciantes e profissionais. Ele junta um microcontrolador, uma placa fácil de conectar componentes e uma IDE simples para programar. Serve para automação, robótica, sensores e projetos eletrônicos em geral.</p>
+            <p>Arduino é uma plataforma de prototipagem eletrônica muito usada por iniciantes e profissionais. Ele junta
+                um microcontrolador, uma placa fácil de conectar componentes e uma IDE simples para programar. Serve
+                para automação, robótica, sensores e projetos eletrônicos em geral.</p>
             <h3>9.4 O que é um microcontrolador?</h3>
-            <p>Um microcontrolador é um chip que funciona como um pequeno computador. Ele possui processador, memória e portas de entrada/saída. É ele que executa o código e controla tudo o que o Arduino faz.</p>
+            <p>Um microcontrolador é um chip que funciona como um pequeno computador. Ele possui processador, memória e
+                portas de entrada/saída. É ele que executa o código e controla tudo o que o Arduino faz.</p>
             <h3>9.5 Qual o microcontrolador do Arduino</h3>
-            <ul>
+            <ul style="margin-left: 64px;">
                 <li><strong>Modelo usado pelo Arduino:</strong> ATmega328P</li>
                 <li><strong>Fabricado por:</strong> Microchip Technology (Antiga Atmel)</li>
-            </ul> 
+            </ul>
             <h3>9.6 Qual a linguagem de programação do arduino</h3>
-            <p>O Arduino usa uma linguagem baseada em C/C++ simplificada, com funções próprias para facilitar o uso dos pinos.</p>
+            <p>O Arduino usa uma linguagem baseada em C/C++ simplificada, com funções próprias para facilitar o uso dos
+                pinos.</p>
             <h3>9.7 Onde é programado o arduino?</h3>
-            <p>O código é escrito na Arduino IDE, que pode ser instalada no computador ou usada na versão online (Arduino Web Editor).</p>
+            <p>O código é escrito na Arduino IDE, que pode ser instalada no computador ou usada na versão online
+                (Arduino Web Editor).</p>
+            <h3>9.8 Valor em volts da entrada analógica e resolução</h3>
+            <p>A faixa de leitura da entrada analógica no arduino é de 0V a 5V, e a resolução de 10 bits (0 a 1023)</p>
+            <h3>9.8 Valor da entrada e saida digital em volts</h3>
+            <p>Para entrada, os valores são:</p>
+            <ul style="margin-left: 64px;">
+                <li><strong>LOW:</strong> Aproximadamente 0V a 1,5V</li>
+                <li><strong>HIGH:</strong> Aproximadamente 3V a 5V</li>
+            </ul>
+            <p>E para saida os valores são:</p>
+            <ul style="margin-left: 64px;">
+                <li><strong>LOW:</strong> Aproximadamente 0V a 1,5V</li>
+                <li><strong>HIGH:</strong> Aproximadamente 3V a 5V</li>
+            </ul>
+            <h3>9.9 O que é um multímetro</h3>
+            <p>Um multímetro é um instrumento de medição elétrica usado para testar circuitos, componentes e identificar
+                problemas.</p>
+            <h3>9.10 Grandezas que o Multímetro consegue medir</h3>
+            <p>O Multímetro pode medir: </p>
+            <ul style="margin-left: 64px;">
+                <li><strong>Tensão (V)</strong></li>
+                <li><strong>Corrente (A)</strong></li>
+                <li><strong>Resistência (Ω)</strong></li>
+            </ul>
+            <h3>9.11 O que é escala de medição</h3>
+            <p>É a faixa de valores que o multímetro vai medir. Por exemplo: 20V, 200V, 200Ω. Se você escolhe a escala
+                errada, pode não medir corretamente ou até danificar o aparelho.</p>
+            <h3>9.12 Qual lei o multímetro aplica</h3>
+            <p>A medição de grandezas elétricas segue a Lei de Ohm (V = R * I), usada internamente para interpretar
+                valores de tensão, corrente e resistência.</p>
+            <h3>9.13 O que é teste de continuidade e para que serve</h3>
+            <p>É um teste que verifica se existe um caminho elétrico fechado entre dois pontos. Se houver continuidade,
+                o multímetro apita, é usado para: verificar fios rompidos, confirmar ligações corretas e até testar
+                trilhas na protoboard</p>
+            <h3>9.14 Como medir a tensão em um circuito com resistor e LED</h3>
+            <p>O multímetro deve ficar em paralelo com o componente, e para medir você deve colocar a ponta vermelha do
+                multimetro, no positivo do LED, é a ponta preta no negativo do LED, o mesmo se aplica com os resistores.
+            </p>
+            <div class="imgg">
+                <img src="./img/mede_multimetro.jpg" alt="" style="border-radius: 24px; border: 1px;">
+            </div>
+            <h3>9.15 Como medir a corrente elétrica no circuito</h3>
+            <p>A corrente é medida em série. Ou seja, você deve interromper o circuito e colocar o multímetro no meio do
+                caminho para que a corrente passe por ele. Assim ele mede quantos amperes estão fluindo.</p>
+        </section>
+        <section id="fotosvideos">
+            <h2>8. Fotos e Videos dos Projetos</h2>
+            <h3 style="text-align: center;">Fotos e videos do projeto do LED com potenciometro</h3>
+            <br>
+            <p></p>
+            <div class="grid-box3">
+                <div class="printTinkercad"><img src="./img/ligacao_eletronica_led.png" alt=""></div>
+                <div class="imgArduino"><img src="./img/arduino_3_leds.jpg" alt=""></div>
+                <div class="video-led"><iframe width="560" height="315" src="https://www.youtube.com/embed/JHqZn_CzFGA?si=LJ6aUJSzBk5GktQJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
+            <h3 style="text-align: center; margin-bottom: 16px;">Fotos e videos do projeto do Display de 7 Segmentos</h3>
+            <div class="grid-box3">
+                <div class="printTinkercad"><img src="./img/ligacao_led_display.png" alt=""></div>
+                <div class="imgArduino"><img src="./img/ligacao_fisica_display.png" alt=""></div>
+                <div class="video-led"><iframe width="560" height="315" src="https://www.youtube.com/embed/3g3CQmLstE4?si=Mu5I2lqppJ89cEZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
+            <h3 style="text-align: center; margin-bottom: 16px;">Codigos utilizados no Arduino</h3>
+            <div class="grid-box2">
+                <div class="codeLED"> 
+                    <pre>
+    void setup()
+    {
+    pinMode(12, OUTPUT);
+    pinMode(10, OUTPUT);
+    pinMode(8, OUTPUT);
+    pinMode(A0, INPUT);
+    Serial.begin(9600);
+    digitalWrite(12, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(8, LOW);
+    }
+    
+    void loop()
+    {
+    analog = analogRead(A0);
+    digitalWrite(12, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(8, LOW);
+    if (analog >= 300) {
+        digitalWrite(12, HIGH);
+        digitalWrite(10, LOW);
+        digitalWrite(8, LOW);
+    } else {
+        digitalWrite(12, LOW);
+    }
+    if (analog >= 600) {
+        digitalWrite(10, HIGH);
+        digitalWrite(8, LOW);
+        digitalWrite(12, LOW);
+    } else {
+        digitalWrite(10, LOW);
+    }
+    if (analog >= 900) {
+        digitalWrite(8, HIGH);
+        digitalWrite(10, LOW);
+        digitalWrite(12, LOW);
+    } else {
+        digitalWrite(8, LOW);
+    }
+    Serial.println(analog);
+    delay(10); // Delay a little bit to improve simulation performance
+    }
+                    </pre>
+                </div>
+                <div class="code7Seg">
+                    <pre>
+    // C++ code
+    int contador = 0;
+                        
+    void setup() {
+        pinMode(A0, INPUT);
+        Serial.begin(9600);
+        pinMode(2, OUTPUT);
+        pinMode(3, OUTPUT);
+        pinMode(4, OUTPUT);
+        pinMode(5, OUTPUT);
+        pinMode(6, OUTPUT);
+        pinMode(7, OUTPUT);
+        pinMode(8, OUTPUT);
+    }
+                        
+    void loop() {
+        Serial.println(analogRead(A0));
+        if (analogRead(A0) <= 100) {
+            digitalWrite(2, HIGH);
+            digitalWrite(3, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(5, HIGH);
+            digitalWrite(6, HIGH);
+            digitalWrite(7, HIGH);
+            digitalWrite(8, HIGH); }
+        if (analogRead(A0) >= 100 && analogRead(A0) <= 200) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, LOW);
+            digitalWrite(4, HIGH);
+            digitalWrite(5, LOW);
+            digitalWrite(6, LOW);
+            digitalWrite(7, HIGH);
+            digitalWrite(8, LOW); }
+        if (analogRead(A0) >= 200 && analogRead(A0) <= 300) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(5, LOW);
+            digitalWrite(6, HIGH);
+            digitalWrite(7, HIGH);
+            digitalWrite(8, LOW); }
+        if (analogRead(A0) >= 300 && analogRead(A0) <= 400) {
+            digitalWrite(2, HIGH);
+            digitalWrite(3, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(5, HIGH);
+            digitalWrite(6, HIGH);
+            digitalWrite(7, LOW);
+            digitalWrite(8, LOW); }
+        if (analogRead(A0) >= 400 && analogRead(A0) <= 500) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, HIGH);
+            digitalWrite(4, LOW);
+            digitalWrite(5, LOW);
+            digitalWrite(6, HIGH);
+            digitalWrite(7, LOW);
+            digitalWrite(8, LOW); }
+        if (analogRead(A0) >= 500 && analogRead(A0) <= 600) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, HIGH);
+            digitalWrite(4, LOW);
+            digitalWrite(5, LOW);
+            digitalWrite(6, LOW);
+            digitalWrite(7, LOW);
+            digitalWrite(8, LOW); }
+        if (analogRead(A0) >= 600 && analogRead(A0) <= 700) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(5, HIGH);
+            digitalWrite(6, HIGH);
+            digitalWrite(7, HIGH);
+            digitalWrite(8, HIGH); }
+        if (analogRead(A0) >= 700 && analogRead(A0) <= 800) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(5, LOW);
+            digitalWrite(6, LOW);
+            digitalWrite(7, LOW);
+            digitalWrite(8, LOW); }
+        if (analogRead(A0) >= 800 && analogRead(A0) <= 900) {
+            digitalWrite(2, LOW);
+            digitalWrite(3, LOW);
+            digitalWrite(4, LOW);
+            digitalWrite(5, HIGH);
+            digitalWrite(6, HIGH);
+            digitalWrite(7, LOW);
+            digitalWrite(8, LOW); }
+        delay(10); // Delay a little bit to improve simulation performance }
+                    </pre>
+                </div>
+            </div>
+                
+            </div>
         </section>
         <section id="calculadora">
             <div class="div-calc">
