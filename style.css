@@ -146,14 +146,23 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 32px;
+}
+
+.grid-box2F {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     gap: 32px;
 }
     
 .codeLED { grid-area: 1 / 1 / 2 / 2; }
 .code7Seg { grid-area: 1 / 2 / 2 / 3; }
 
+.fotoMultimetro { grid-area: 1 / 1 / 2 / 2; }
+.foto7Seg { grid-area: 1 / 2 / 2 / 3; }
+
+.grid-box2F,
 .grid-box3 img{
     width: 500px;
 }

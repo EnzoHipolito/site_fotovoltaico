@@ -220,9 +220,15 @@
             <p>Arduino é uma plataforma de prototipagem eletrônica muito usada por iniciantes e profissionais. Ele junta
                 um microcontrolador, uma placa fácil de conectar componentes e uma IDE simples para programar. Serve
                 para automação, robótica, sensores e projetos eletrônicos em geral.</p>
+            <div class="imgg">
+                <img src="./img/arduino.jpg" alt="" style="border-radius: 24px; border: 1px;">
+            </div>
             <h3>9.4 O que é um microcontrolador?</h3>
             <p>Um microcontrolador é um chip que funciona como um pequeno computador. Ele possui processador, memória e
                 portas de entrada/saída. É ele que executa o código e controla tudo o que o Arduino faz.</p>
+            <div class="imgg">
+                <img src="./img/microcontrolador.jpg" alt="" style="border-radius: 24px; border: 1px;">
+            </div>
             <h3>9.5 Qual o microcontrolador do Arduino</h3>
             <ul style="margin-left: 64px;">
                 <li><strong>Modelo usado pelo Arduino:</strong> ATmega328P</li>
@@ -257,12 +263,18 @@
                 <li><strong>Corrente (A)</strong></li>
                 <li><strong>Resistência (Ω)</strong></li>
             </ul>
+            <div class="imgg">
+                <img src="./img/multimetro.jpg" alt="" style="border-radius: 24px; border: 1px;">
+            </div>
             <h3>9.11 O que é escala de medição</h3>
             <p>É a faixa de valores que o multímetro vai medir. Por exemplo: 20V, 200V, 200Ω. Se você escolhe a escala
                 errada, pode não medir corretamente ou até danificar o aparelho.</p>
             <h3>9.12 Qual lei o multímetro aplica</h3>
             <p>A medição de grandezas elétricas segue a Lei de Ohm (V = R * I), usada internamente para interpretar
                 valores de tensão, corrente e resistência.</p>
+            <div class="imgg">
+                <img src="./img/leiohm.png" alt="" style="border-radius: 24px; border: 1px;">
+            </div>
             <h3>9.13 O que é teste de continuidade e para que serve</h3>
             <p>É um teste que verifica se existe um caminho elétrico fechado entre dois pontos. Se houver continuidade,
                 o multímetro apita, é usado para: verificar fios rompidos, confirmar ligações corretas e até testar
@@ -286,18 +298,30 @@
             <div class="grid-box3">
                 <div class="printTinkercad"><img src="./img/ligacao_eletronica_led.png" alt=""></div>
                 <div class="imgArduino"><img src="./img/arduino_3_leds.jpg" alt=""></div>
-                <div class="video-led"><iframe width="560" height="315" src="https://www.youtube.com/embed/JHqZn_CzFGA?si=LJ6aUJSzBk5GktQJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="video-led"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/JHqZn_CzFGA?si=LJ6aUJSzBk5GktQJ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
-            <h3 style="text-align: center; margin-bottom: 16px;">Fotos e videos do projeto do Display de 7 Segmentos</h3>
+            <h3 style="text-align: center; margin-bottom: 16px;">Fotos e videos do projeto do Display de 7 Segmentos
+            </h3>
             <div class="grid-box3">
                 <div class="printTinkercad"><img src="./img/ligacao_led_display.png" alt=""></div>
                 <div class="imgArduino"><img src="./img/ligacao_fisica_display.png" alt=""></div>
-                <div class="video-led"><iframe width="560" height="315" src="https://www.youtube.com/embed/3g3CQmLstE4?si=Mu5I2lqppJ89cEZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="video-led"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/3g3CQmLstE4?si=Mu5I2lqppJ89cEZw" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
             <h3 style="text-align: center; margin-bottom: 16px;">Codigos utilizados no Arduino</h3>
             <div class="grid-box2">
-                <div class="codeLED"> 
+                <div class="codeLED">
                     <pre>
+
+                        //CODIGO DO LED
+
     void setup()
     {
     pinMode(12, OUTPUT);
@@ -344,8 +368,8 @@
                 </div>
                 <div class="code7Seg">
                     <pre>
-    // C++ code
-    int contador = 0;
+
+                        C//ODIGO DE 7 SEGMENTOS
                         
     void setup() {
         pinMode(A0, INPUT);
@@ -437,7 +461,19 @@
                     </pre>
                 </div>
             </div>
-                
+            <h3 style="text-align: center; margin-bottom: 16px;">Fotos medindo o Potenciometro e o Display de 7 Segmentos</h3>
+            <div style="margin-left: 300px;">
+                <div class="grid-box2F">
+                    <div class="fotoMultimetro"><img src="./img/mede_multimetro.jpg" style="width: 500px;" alt=""></div>
+                    <div class="foto7Seg"><img src="./img/foto7seg.jpeg" style="width: 500px;" alt=""></div>
+                </div>
+            </div>
+            <h3 style="text-align: center; margin-bottom: 16px;">Fotos/Videos dos graficos dos programas feitos</h3>
+            <div style="margin-left: 300px;">
+                <div class="grid-box2F">
+                    <div class="fotoMultimetro"><img src="./img/printgrafico.png" style="width: 500px;" alt=""></div>
+                    <div class="foto7Seg"><iframe width="560" height="315" src="https://www.youtube.com/embed/5t4eZbkIWFQ?si=pIp_BZ1Md1kor8A6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                </div>
             </div>
         </section>
         <section id="calculadora">
